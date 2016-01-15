@@ -2,10 +2,21 @@
   display: none;
 }
 .pfont {
-  font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif
+  font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+  font-size:18px;
 
 }
 
+h3 {
+  display: none;
+  font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+  font-size:30px;
+  width:400px;
+  height:60px;
+  text-align: center;
+  display: none;
+  font-style: italic;
+}
 
 #img2, #img3, #img4, #formid1 {
   display: none;
@@ -17,13 +28,15 @@
   font-size: 14px;
   /*width:100%;
   height:100%;*/
-  margin-left:auto;
+  margin-left:30px;
+  margin-top:5px;
   margin-right:auto;
   padding:inherit;
   padding-top: 1px;
-    width: 100%;
-    height: 100%;
-  font-size: 18px;
+  padding-left: 20px;
+    width: 50%;
+    height: 50%;
+  font-size: 15px;
   font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
 
 }
@@ -36,9 +49,24 @@ hr {
   border-color: #644a62;
 }
 
+.btn {
+  color:red;
+  background-color: orange;
+}
 
-h1, h2 {
+h1 {
   font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif
+}
+
+h2 {
+  font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+  font-size:20px;
+  width:800px;
+  height:80px;
+  text-align: center;
+  display: none;
+  font-style: italic;
+
 }
 .image1, .img2, .img3, .img4 {
   width: 400px;

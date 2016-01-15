@@ -22,6 +22,26 @@ $(function(){
   });
 });
 
+
+
+
+
+$(function(){
+  $('button').click(function(){
+    $('h2').show();
+  });
+});
+
+$(function(){
+  $('button').click(function(){
+    $('h3').show();
+  });
+});
+
+
+
+
+
 $(function(){
   $('button').click(function(){
     $('#img4').show();
@@ -136,6 +156,29 @@ if (lodgings === "ice" && weather === "warm") {
   $('.img4').hide();
 }
 
+if (food === "poi" && weather === "hot") {
+  $('#Hawaii').show();
+  $('.img2').hide();
+  $('.img4').hide();
+}
+
+if (weather === "hot" && lodgings === "resort") {
+  $('#Hawaii').show();
+  $('.img2').hide();
+  $('.img4').hide();
+}
+
+if (age <=100 && weather === "warm" && food === "paella") {
+  $('#Barcelona').show();
+  $('.img2').hide();
+  $('.img3').hide();
+}
+
+if (lodgings === "ice" && activities === "skiing") {
+  $('#Switzerland').show();
+  $('.img3').hide();
+  $('.img4').hide();
+}
 
 
 
