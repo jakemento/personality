@@ -37,7 +37,7 @@ hr {
 }
 
 
-h1 {
+h1, h2 {
   font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif
 }
 .image1, .img2, .img3, .img4 {
@@ -49,13 +49,6 @@ h1 {
 
 }
 
-
-}
-
-#img2 {
-  width:200px;
-  height:200px;
-}
 
 .grid {
   background-color: #white;

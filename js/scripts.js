@@ -33,20 +33,28 @@ $(function(){
   });
 });
 
+$(function(){
+  $('btn2').click(function(){
+    $('.btn2').hide();
+  });
+});
 
 
-//
-// $("form#formid1").submit(function(event) {
-//
-// var age = parseInt($("input#age").val());
-// var food = $("select#food").val();
-//
-// if (food === "Poi" && age >14 "Birdperson" && alien !== "Zeke" && age>50 && musical !=='Schwifty') {
-//   $('#rick').show();
-// } else {
-//   $('#rick').hide();
-// }
-//
+
+$("form#formid1").submit(function(event) {
+
+var age = parseInt($("input#age").val());
+var food = $("select#food").val();
+var weather = $("select#weather").val();
+var lodgings = $("select#lodgings").val();
+var activities = $("select#activities").val();
+
+if (food === "poi" && weather === "hot" && lodgings === "resort" && activities === "snorkel" && age>0) {
+  $('#hawaii').show();
+} else {
+  $('#hawaii').hide();
+}
+
 // if (alien !== "Gearhead" && alien === "Birdperson" && alien !== "Zeke" && age>50 && musical !=='Schwifty') {
 //   $('#morty').show();
 // } else {
@@ -73,5 +81,9 @@ $(function(){
 // } else {
 //   $('#meseeks').hide();
 // }
+
+
+
 event.preventDefault();
+});
 });
