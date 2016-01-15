@@ -49,17 +49,55 @@ var weather = $("select#weather").val();
 var lodgings = $("select#lodgings").val();
 var activities = $("select#activities").val();
 
-if (food === "poi" && weather === "hot" && lodgings === "resort" && activities === "snorkel" && age>0) {
-  $('#hawaii').show();
+if (food === "poi" && weather === "hot" && lodgings === "resort" && activities === "snorkel" && age<=20) {
+  $('#Hawaii').show();
 } else {
-  $('#hawaii').hide();
+  $('#Hawaii').hide();
 }
 
-// if (alien !== "Gearhead" && alien === "Birdperson" && alien !== "Zeke" && age>50 && musical !=='Schwifty') {
-//   $('#morty').show();
-// } else {
-//   $('#morty').hide();
-// }
+if (food === "poi" && weather === "warm") {
+  $('#Hawaii').show();
+} else {
+  $('#Hawaii').hide();
+}
+
+if (food === "paella" && weather === "warm" && lodgings === "gothic" && activities === "cathedral" && age<=40) {
+  $('#Barcelona').show();
+} else {
+  $('#Barcelona').hide();
+}
+
+if (food === "paella" && weather === "warm" && age>=0) {
+  $('#Barcelona').show();
+} else {
+  $('#Barcelona').hide();
+}
+
+if (food === "paella" && activities === "gothic") {
+  $('#Barcelona').show();
+} else {
+  $('#Barcelona').hide();
+}
+
+
+
+if (food === "paella" && weather === "warm" && lodgings === "gothic") {
+  $('#Barcelona').show();
+} else {
+  $('#Barcelona').hide();
+}
+
+if (food === "fondue" && weather === "cold") {
+  $('#Switzerland').show();
+} else {
+  $('#Switzerland').hide();
+}
+
+if (food === "poi" && weather === "warm") {
+  $('#Hawaii').show();
+} else {
+  $('#Hawaii').hide();
+}
 //
 // if (alien !== "Gearhead" && alien !== "Birdperson" && alien === "Zeke" && age>50 && musical !=='Schwifty') {
 //   $('#jerry').show();
