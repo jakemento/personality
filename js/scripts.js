@@ -9,6 +9,7 @@ $(function(){
   });
 });
 
+
 $(function(){
   $('button').click(function(){
     $('#img2').show();
@@ -34,11 +35,16 @@ $(function(){
 });
 
 $(function(){
-  $('btn2').click(function(){
-    $('.btn2').hide();
+  $('button').click(function(){
+    $('#formid1').show();
   });
 });
 
+$(function(){
+  $('.btn2').click(function(){
+    $('.btn2').hide();
+  });
+});
 
 
 $("form#formid1").submit(function(event) {
@@ -49,76 +55,87 @@ var weather = $("select#weather").val();
 var lodgings = $("select#lodgings").val();
 var activities = $("select#activities").val();
 
-if (food === "poi" && weather === "hot" && lodgings === "resort" && activities === "snorkel" && age<=20) {
+if (food === "poi" && weather === "hot" && lodgings === "resort" && activities === "snorkel" && age<=100) {
   $('#Hawaii').show();
-} else {
-  $('#Hawaii').hide();
+  $('.img2').hide();
+  $('.img4').hide();
 }
 
 if (food === "poi" && weather === "warm") {
   $('#Hawaii').show();
+  $('.img2').hide();
+  $('.img4').hide();
 } else {
   $('#Hawaii').hide();
 }
 
 if (food === "paella" && weather === "warm" && lodgings === "gothic" && activities === "cathedral" && age<=40) {
   $('#Barcelona').show();
-} else {
-  $('#Barcelona').hide();
+  $('.img2').hide();
+  $('.img3').hide();
 }
 
 if (food === "paella" && weather === "warm" && age>=0) {
   $('#Barcelona').show();
-} else {
-  $('#Barcelona').hide();
+  $('.img2').hide();
+  $('.img3').hide();
 }
 
-if (food === "paella" && activities === "gothic") {
+if (food === "paella" && lodgings === "gothic") {
   $('#Barcelona').show();
-} else {
-  $('#Barcelona').hide();
+  $('.img2').hide();
+  $('.img3').hide();
+}
+
+if (food === "paella" && activities === "cathedral") {
+  $('#Barcelona').show();
+  $('.img2').hide();
+  $('.img3').hide();
 }
 
 
 
-if (food === "paella" && weather === "warm" && lodgings === "gothic") {
+if (food === "paella" && weather === "warm") {
   $('#Barcelona').show();
-} else {
-  $('#Barcelona').hide();
+  $('.img2').hide();
+  $('.img3').hide();
 }
 
 if (food === "fondue" && weather === "cold") {
   $('#Switzerland').show();
+  $('.img3').hide();
+  $('.img4').hide();
 } else {
   $('#Switzerland').hide();
 }
 
 if (food === "poi" && weather === "warm") {
   $('#Hawaii').show();
+  $('.img2').hide();
+  $('.img4').hide();
 } else {
   $('#Hawaii').hide();
 }
-//
-// if (alien !== "Gearhead" && alien !== "Birdperson" && alien === "Zeke" && age>50 && musical !=='Schwifty') {
-//   $('#jerry').show();
-// } else {
-//   $('#jerry').hide();
-// }
-// if (age<=50 && age>= 31 && (musical !=='Schwifty')) {
-//   $('#beth').show();
-// } else {
-//   $('#beth').hide();
-// }
-// if (age>=1 && age<=30 && (musical !=='Schwifty')) {
-//   $('#summer').show();
-// } else {
-//   $('#summer').hide();
-// }
-// if (age>0 && musical ==='Schwifty') {
-//   $('#meseeks').show();
-// } else {
-//   $('#meseeks').hide();
-// }
+
+
+if (activities === "skiing" && weather === "cold") {
+  $('#Switzerland').show();
+  $('.img3').hide();
+  $('.img4').hide();
+}
+
+if (lodgings === "ice" && weather === "cold") {
+  $('#Switzerland').show();
+  $('.img3').hide();
+  $('.img4').hide();
+}
+
+if (lodgings === "ice" && weather === "warm") {
+  $('#Switzerland').show();
+  $('.img3').hide();
+  $('.img4').hide();
+}
+
 
 
 
