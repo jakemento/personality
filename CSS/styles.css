@@ -7,6 +7,9 @@
 
 }
 
+body {
+  width:100%;
+}
 h3 {
   display: none;
   font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
@@ -44,6 +47,8 @@ h3 {
 
 hr {
   border-color: #644a62;
+  height:4%;
+  width:100%;
 }
 
 .btn {
@@ -75,10 +80,19 @@ h2 {
 
 }
 
-
 .grid {
   background-color: #white;
   border: 2px;
   border-style:outset;
   border-width:medium;
+}
+
+form {
+  font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+  font-size: 14px;
+}
+
+.spanner {
+  text-decoration: underline;
+  color:teal;
 }

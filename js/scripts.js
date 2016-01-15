@@ -95,6 +95,12 @@ if (food === "paella" && weather === "warm" && lodgings === "gothic" && activiti
   $('.img3').hide();
 }
 
+if (food === "paella" && weather === "warm" && lodgings === "ice" && activities === "skiing") {
+  $('#Barcelona').show();
+  $('.img2').hide();
+  $('.img3').hide();
+}
+
 if (food === "paella" && weather === "warm" && age>=0) {
   $('#Barcelona').show();
   $('.img2').hide();
@@ -125,8 +131,6 @@ if (food === "fondue" && weather === "cold") {
   $('#Switzerland').show();
   $('.img3').hide();
   $('.img4').hide();
-} else {
-  $('#Switzerland').hide();
 }
 
 if (food === "poi" && weather === "warm") {
@@ -186,6 +190,22 @@ if (lodgings === "gothic" && activities === "cathedral") {
   $('.img3').hide();
 }
 
+if (weather === "cold" && lodgings === "cathedral") {
+  $('#Barcelona').show();
+  $('.img2').hide();
+  $('.img3').hide();
+}
+
+if (weather === "warm" && lodgings === "gothic" && activities === "snorkeling") {
+  $('#Barcelona').show();
+  $('.img2').hide();
+  $('.img3').hide();
+}
+
+if (food === "paella" && weather === "warm" && lodgings === "ice" && activities === "skiing") {
+  $('#Barcelona').show();
+  $('.img3').hide();
+}
 
 
 
