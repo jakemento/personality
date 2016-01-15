@@ -39,9 +39,9 @@ $(function(){
 $("form#formid1").submit(function(event) {
 
 var age = parseInt($("input#age").val());
-var alien = $("select#alien").val();
+var food = $("select#food").val();
 
-if (alien === "Gearhead" && alien !== "Birdperson" && alien !== "Zeke" && age>50 && musical !=='Schwifty') {
+if (food === "Poi" && age >14 "Birdperson" && alien !== "Zeke" && age>50 && musical !=='Schwifty') {
   $('#rick').show();
 } else {
   $('#rick').hide();
