@@ -180,6 +180,13 @@ if (lodgings === "ice" && activities === "skiing") {
   $('.img4').hide();
 }
 
+if (lodgings === "gothic" && activities === "cathedral") {
+  $('#Barcelona').show();
+  $('.img2').hide();
+  $('.img3').hide();
+}
+
+
 
 
 event.preventDefault();
